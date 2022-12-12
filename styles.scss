@@ -1,8 +1,54 @@
+$fondo: hsl(36, 100%, 99%);
+$color-numbers: hsl(233, 8%, 79%);
+$color-parrafos: hsl(236, 13%, 42%);
+$color-news: hsl(240, 100%, 5%);
+$color-btn: hsl(5, 85%, 63%);
+$color-title:  hsl(35, 77%, 62%);
+$fuente: 'Inter';
+
+@mixin parrafos{
+    font-size: 15px;
+    color: $color-parrafos;
+    font-family: $fuente;
+    font-weight: 400;
+}
+@mixin subtitulos-list{
+    color:$color-news;
+    font-weight: 700;
+    font-family: $fuente;
+}
+@mixin titulo-list{
+    color:$color-numbers;
+    font-weight: 800;
+    font-size: 25px;
+}
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+ font-size: 62.5%;   
+ scroll-behavior: smooth;
 }
 body{
-    margin: 10px;
-    height: 100vh;
+    margin: 10px;     
+}
+.header{
     width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    &__logo{
+        
+        height: 20px;
+        width: 30px;
+    }
+    &__menu-logo{
+       
+        height: 20px;
+        width: 30px;
+    }
 }
