@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800&display=swap" rel="stylesheet">
   <title>Frontend Mentor | News homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -20,37 +21,45 @@
 <header class="header">
 <img class="header__logo" src="./assets/images/logo.svg" alt="">
 <img class="header__menu-logo" src="./assets/images/icon-menu.svg" alt="">
-
-
 </header>
 <main>
   <section class="principal">
-<span class="principal__img"></span>
-<h3 class="principal__title"> The Bright Future of Web 3.0?</h3>
-<p class="principal__parrafo"> We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?</p>
-<button class="principal__btn">Read more</button>
+    <img class="principal__img" src="./assets/images/image-web-3-mobile.jpg" alt="">
+    <h3 class="principal__title"> The Bright Future of Web 3.0?</h3>
+    <div>
+      <p class="principal__parrafo"> We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+        But is it really fulfilling its promise?</p>
+      <button class="principal__btn">Read more</button>
+    </div>
+    
   </section>
 
   <section class="news">
 <div class="news__container">
   <h3 class="news__container--title">New</h3>
-  <h4 class="news__container--subtitle">  Hydrogen VS Electric Cars</h4>
-  <p class="news__container--parrafo">  Will hydrogen-fueled cars ever catch up to EVs?
-  </p>
-  <h4 class="news__container--subtitle">  The Downsides of AI Artistry
-  </h4>
-  <p class="news__container--parrafo">  What are the possible adverse effects of on-demand AI image generation?
-  </p>
-  <h4 class="news__container--subtitle">  Is VC Funding Drying Up?
-  </h4>
-  <p class="news__container--parrafo">  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-  </p>
+  <div class="news__container--div news__container--extra">
+    <h4 class="news__container--subtitle">  Hydrogen VS Electric Cars</h4>
+    <p class="news__container--parrafo">  Will hydrogen-fueled cars ever catch up to EVs?
+    </p>
+  </div>
+  <div class="news__container--div news__container--extra">
+    <h4 class="news__container--subtitle">  The Downsides of AI Artistry
+    </h4>
+    <p class="news__container--parrafo">  What are the possible adverse effects of on-demand AI image generation?
+    </p>
+  </div>
+  <div class="news__container--div">
+    <h4 class="news__container--subtitle">  Is VC Funding Drying Up?
+    </h4>
+    <p class="news__container--parrafo">  Private funding by VC firms is down 50% YOY. We take a look at what that means.
+    </p>
+  </div>
+  
 </div>
   </section>
   <section class="list">
 <div class="list__container">
-<div class="list__container--img"></div>
+  <img class="list__container--img" src="./assets/images/image-retro-pcs.jpg" alt="">
 <div class="list__container--text">
   <h4 class="text__title">01</h4>
   <h5 class="text__subtitle">Reviving Retro PCs</h5>
@@ -58,7 +67,7 @@
 </div>
 </div>
 <div class="list__container">
-<div class="list__container--img"></div>
+<img class="list__container--img" src="./assets/images/image-top-laptops.jpg" alt="">
 <div class="list__container--text">
   <h4 class="text__title">02</h4>
   <h5 class="text__subtitle">Top 10 Laptops of 2022</h5>
@@ -66,8 +75,8 @@
 </div>
 </div>
 <div class="list__container">
-  <div class="list__container--img"></div>
-  <div class="list__container--text">
+<img class="list__container--img" src="./assets/images/image-gaming-growth.jpg" alt="">  
+<div class="list__container--text">
     <h4 class="text__title">03</h4>
     <h5 class="text__subtitle">The Growth of Gaming</h5>
     <p class="text__parrafo">How the pandemic has sparked fresh opportunities.</p>
