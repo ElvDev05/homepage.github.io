@@ -1,6 +1,7 @@
 @media (min-width:1440px){
 body{
     margin: 80px 150px;
+    
 }
 .header{
     height: 100px;
@@ -20,6 +21,7 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    max-width: 900px;
     &__img{
         grid-area: 1/1/2/3;
     }
@@ -49,6 +51,7 @@ main{
     height: auto;
     margin-top: 10px;
     padding: 20px 15px;
+    max-width: 350px;
     &__container{
        margin: 0;
        padding: 0;
@@ -67,6 +70,7 @@ main{
     display: flex;
     justify-content: space-around;
     height: 250px;
+    
     margin: 20px auto;
     place-self: center;
     grid-area: 2/1/3/3;

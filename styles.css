@@ -55,7 +55,13 @@ body {
   font-family: "Inter";
   font-size: 15px;
   font-weight: 400;
-  margin: 15px 0;
+  margin: 15px;
+}
+.header__sidebar--text:hover {
+  cursor: pointer;
+}
+.header__sidebar--text:active {
+  color: hsl(35deg, 77%, 62%);
 }
 
 .activate--sidebar {
@@ -210,6 +216,9 @@ footer {
 }
 
 @media (min-width: 700px) {
+  body {
+    margin: 40px 50px;
+  }
   .principal {
     align-items: center;
     margin: 0 auto;
@@ -217,7 +226,7 @@ footer {
   .principal__img {
     content: url(../assets/images/image-web-3-desktop.jpg);
     width: 100%;
-    max-width: 1460px;
+    max-width: 700px;
     max-height: 300px;
   }
   .principal__parrafo {
@@ -231,6 +240,10 @@ footer {
   }
   .list__container--img {
     place-self: center;
+  }
+  .news {
+    max-width: 700px;
+    margin: 0 auto;
   }
 }
 @media (min-width: 1440px) {
@@ -256,6 +269,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    max-width: 900px;
   }
   .principal__img {
     grid-area: 1/1/2/3;
@@ -283,6 +297,7 @@ footer {
     height: auto;
     margin-top: 10px;
     padding: 20px 15px;
+    max-width: 350px;
   }
   .news__container {
     margin: 0;

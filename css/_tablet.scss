@@ -1,11 +1,14 @@
 @media (min-width:700px){
+    body{
+        margin: 40px 50px;
+    }
     .principal{
         align-items: center;
         margin: 0 auto;
         &__img{
             content: url(../assets/images/image-web-3-desktop.jpg);
             width: 100%;
-            max-width: 1460px;
+            max-width: 700px;
             max-height: 300px;
         }
         &__parrafo{
@@ -28,5 +31,9 @@
 
         }
         
+    }
+    .news{
+        max-width: 700px;
+        margin: 0 auto;
     }
 }
