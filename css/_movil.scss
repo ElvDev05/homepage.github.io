@@ -60,6 +60,35 @@ body{
         height: 20px;
         width: 30px;
     }
+    &__sidebar{
+        height: 100%;
+        position: fixed;
+        right: -100%;
+        transition: all 300ms linear;
+        width: 70%;
+        background-color: $fondo;
+        top: 0;
+        display: flex;
+        padding: 20px 10px;
+        flex-direction: column;
+        img{
+            justify-self: flex-end;
+            align-self: flex-end;
+            height: 30px;
+            width: 30px;
+            margin-bottom: 60px;
+        }
+        &--text{
+            @include subtitulos-list();
+            font-weight: 400;
+            margin: 15px 0;
+
+        }
+
+    }
+}
+.activate--sidebar{
+    right: 0;
 }
 .principal{
     width: 100%;
@@ -98,6 +127,13 @@ body{
         font-size: 12px;
         letter-spacing: 3px;
       
+    }
+    &__btn:active{
+        background-color: $color-news;
+       
+    }
+    &__btn:hover{
+        cursor: pointer;
     }
 }
 .news{
